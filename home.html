@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurante Mexicano</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="logo.png" width="50" class="rounded-circle"> Restaurante Mexicano
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Reservas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-bs-toggle="dropdown">
+                            Idiomas
+                        </a>
+                        <ul class="dropdown-menu espacio">
+                            <li><a class="dropdown-item" href="#">Español</a></li>
+                            <li><a class="dropdown-item" href="#">Inglés</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3 espacio">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+                <a href="administracion.html" class="btn btn-outline-light ms-3">Administración</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="container mt-5 pt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="comida1.png" class="d-block w-100 rounded shadow-lg">
+                </div>
+                <div class="carousel-item">
+                    <img src="comida2.png" class="d-block w-100 rounded shadow-lg">
+                </div>
+                <div class="carousel-item">
+                    <img src="comida3.png" class="d-block w-100 rounded shadow-lg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="text-center my-4">
+        <h1 class="emergente animate__animated animate__flipInX">¡Disfruta de lo mejor de México!</h1>
+    </div>
+
+
+    <div class="container my-10 padding">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <p>Ven a disfrutar de nuestros manjares o pídelos para llevar. Aquí el auténtico sabor de México cobra vida. Disfruta de nuestros tacos, enchiladas y guacamoles preparados con ingredientes frescos y recetas tradicionales. Sumérgete en un ambiente vibrante con música y calidez mexicana. ¡Ven y vive una experiencia gastronómica única! 🌮🇲🇽🔥</p>
+                
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="restaurante.png" class="d-block w-100 fotos-comida">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container text-center my-5">
+        <h2 class="fw-bold mb-4">¿Por qué elegirnos?</h2>
+        <div class="row tarjetas">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <i class="fas fa-seedling fa-3x text-success"></i>
+                        <h5 class="card-title mt-3">Ingredientes Frescos</h5>
+                        <p class="card-text">Todos nuestros ingredientes son 100% naturales y de alta calidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <i class="fas fa-handshake fa-3x text-warning"></i>
+                        <h5 class="card-title mt-3">Ambiente Acogedor</h5>
+                        <p class="card-text">Un lugar perfecto para compartir en familia o con amigos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <i class="fas fa-star fa-3x text-danger"></i>
+                        <h5 class="card-title mt-3">Alta Valoración</h5>
+                        <p class="card-text">Nuestros clientes nos aman, con más de 4.9 estrellas en reseñas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <i class="fas fa-recycle fa-3x text-danger"></i>
+                        <h5 class="card-title mt-3">Respetuosas con el medio ambiente</h5>
+                        <p class="card-text">Todos nuestros ingredientes y utensilios han sido elaborados con un proceso respetusoso con el medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="accordion container my-5" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <small>Juan Pérez</small>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row tarjetas">
+                        <div class="border p-3 rounded shadow-sm">
+                            <p>🌟🌟🌟🌟🌟 "La comida es espectacular, el mejor restaurante mexicano en la ciudad."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    <small>María López</small>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row tarjetas">
+                        <div class="border p-3 rounded shadow-sm">
+                            <p>🌟🌟🌟🌟 "Buen ambiente, deliciosa comida y excelente servicio."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    <small>Andrés Ramírez</small>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row tarjetas">
+                        <div class="border p-3 rounded shadow-sm">
+                            <p>🌟🌟🌟🌟🌟 "Definitivamente regresaré, los tacos al pastor son increíbles."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Logéate</h3>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contraseña</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button  class=" boton">Iniciar sesión</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-center">
+                <h3>Dónde estamos</h3>
+                <img src="mapa.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p> ✉ restaaurannttemexicano@mexi.com</p>
+                    <p>📍 Dirección: Calle 123, Ciudad</p>
+                    <p>📞 Teléfono: 555-1234</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos en:</h5>
+                    <i class="fab fa-facebook mx-2"></i>
+                    <i class="fab fa-twitter mx-2"></i>
+                    <i class="fab fa-instagram mx-2"></i>
+                </div>
+                <div class="col-md-4">
+                    <h5>Saber más</h5>
+                    <p><divclass="text-white">Política de privacidad</div></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
